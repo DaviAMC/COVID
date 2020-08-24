@@ -404,22 +404,21 @@ def drawCA(R_raw,R_smooth,reg,regfile,date):
         
     return
 
-def drawMA(D_raw,reg,regfile,date):
+def drawMA(D_raw,D_smooth,reg,regfile,date):
 
 #Gráfico óbitos acumulados
 #
-    N_k = D_raw.size
-    
+    N_k = D_raw.size    
     plt.grid(False)
     plt.bar(np.linspace(0,N_k-1,N_k),D_raw)
+    plt.plot(np.linspace(0,N_k-1,N_k),D_smooth,color="red")
     plt.xlabel("Dias")
     plt.ylabel("Mortes")
     plt.title("Mortes acumuladas - "+reg+" - "+date[6:8]+"/"+date[4:6]+"/"+date[0:4])
-    plt.savefig(regfile+"MA.jpg",bbox_inches="tight")
-    
+    plt.savefig(regfile+"MA.jpg",bbox_inches="tight")    
     plt.close()
-    
     return
+
 def drawNC(dR_raw,dR_smooth,reg,regfile,date):
 #
 # Gráfico Novos Casos  
@@ -439,12 +438,12 @@ def drawNC(dR_raw,dR_smooth,reg,regfile,date):
     
     return
 
-def drawNM(dD_raw,reg,regfile,date):
+def drawNM(dD_raw,dD_smooth,reg,regfile,date):
     
     N_k = dD_raw.size
-
     plt.grid(False)
     plt.bar(np.linspace(0,N_k-1,N_k),dD_raw)
+    plt.plot(np.linspace(0,N_k-1,N_k),dD_smooth,color="red")
     plt.xlabel("Dias")
     plt.ylabel("Mortes")
     plt.title("Novas mortes - "+reg+" - "+date[6:8]+"/"+date[4:6]+"/"+date[0:4])  
