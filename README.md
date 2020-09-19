@@ -20,4 +20,5 @@ A partir de 12/6, o arquivo csv passou a exceder os 25MB permitidos no github, p
 
 A partir de 13/6, o sistema utiliza os dados da plataforma brasil.io (https://brasil.io/dataset/covid19/caso_full/), que tem se mostrado muito superior tecnicamente e também mais estável que a plataforma do MS (bye bye MS).
 
+Os códigos COVID_2.py e painelCOVID_2.py possuem a nova versão da página, com gráficos novos. Os códigos COVID_gif.py e painelCOVID_gif.py são apenas um teste para a possível inserço de gifs na página. 
 
