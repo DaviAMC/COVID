@@ -438,7 +438,7 @@ def drawNC(dR_raw,dR_smooth,reg,regfile,date,graf,gifs):#estou fazendo o gif aqu
         plt.savefig(graf+regfile+"NC.jpg",bbox_inches="tight")
         plt.close()
         image.append(imageio.imread(graf+regfile+"NC.jpg"))
-    imageio.mimsave(gifs+regfile+"NC.gif",image)#first argument is export name, and second is the list with the frames
+    imageio.mimsave(gifs+regfile+"NC.gif",image,loop = 1)#first argument is export name, and second is the list with the frames
     
     return
 
