@@ -514,7 +514,7 @@ def drawCAS(R_raw,D_raw,N_s,N_d,reg,regfile,date,graf,gifs):
             plt.ylim(0,np.amax(R_week))
             T_week_i = T_week[:i]
             R_week_i = R_week[:i]            
-            plt.bar(T_week_i,R_week_i)
+            plt.bar(T_week_i,R_week_i, color = "blue")
             plt.xlabel("Semanas desde o primeiro caso")
             plt.ylabel("Casos")
             plt.title("Casos por semana - "+reg+" - "+date[6:8]+"/"+date[4:6]+"/"+date[0:4])
@@ -530,7 +530,7 @@ def drawCAS(R_raw,D_raw,N_s,N_d,reg,regfile,date,graf,gifs):
             plt.ylim(0,np.amax(D_week))
             T_week_i = T_week[:i]
             D_week_i = D_week[:i]            
-            plt.bar(T_week_i,D_week_i)
+            plt.bar(T_week_i,D_week_i, color = "blue")
             plt.xlabel("Semanas desde o primeiro caso")
             plt.ylabel("Mortes")
             plt.title("Mortes por semana - "+reg+" - "+date[6:8]+"/"+date[4:6]+"/"+date[0:4])
@@ -549,7 +549,7 @@ def drawCAS(R_raw,D_raw,N_s,N_d,reg,regfile,date,graf,gifs):
             plt.ylim(0,np.amax(R_week))
             T_week_i = T_week[:i]
             R_week_i = R_week[:i]            
-            plt.bar(T_week_i,R_week_i)
+            plt.bar(T_week_i,R_week_i, color = "blue")
             plt.xlabel("Semanas desde o primeiro caso")
             plt.ylabel("Casos")
             plt.title("Casos por semana - "+reg+" - "+date[6:8]+"/"+date[4:6]+"/"+date[0:4])
@@ -573,7 +573,7 @@ def drawCAS(R_raw,D_raw,N_s,N_d,reg,regfile,date,graf,gifs):
             plt.ylim(0,np.amax(D_week))
             T_week_i = T_week[:i]
             D_week_i = D_week[:i]            
-            plt.bar(T_week_i,D_week_i)
+            plt.bar(T_week_i,D_week_i, color = "blue")
             plt.xlabel("Semanas desde o primeiro caso")
             plt.ylabel("Mortes")
             plt.title("Mortes por semana - "+reg+" - "+date[6:8]+"/"+date[4:6]+"/"+date[0:4])

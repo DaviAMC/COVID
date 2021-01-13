@@ -6,8 +6,8 @@ import os
 import painelCOVID_final as painel
 from joblib import Parallel, delayed
 
-date  = "20201222"   # data dos dados da análise 
-date1 = "20201221"  # data dos dados da última análise 
+date  = "20210105"   # data dos dados da análise 
+date1 = "20210104"  # data dos dados da última análise 
 
 gamma1 = 0.119 #limites considerados para o valor de gamma. o r0 vai ser estimado nesses limites
 gamma2 = 0.182
